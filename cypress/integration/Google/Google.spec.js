@@ -1,6 +1,6 @@
 import {Given, When, Then} from "cypress-cucumber-preprocessor/steps";
 
-const url = "https://www.google.cl";
+const url = "";
 
 Given('ingreso a pagina de Google', () => {
     cy.visit(url);
