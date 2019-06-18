@@ -1,3 +1,4 @@
 {
-  "projectId": "2472ba"
+  "projectId": "2472ba",
+  "ignoreTestFiles": ["*.js","*.md"]
 }

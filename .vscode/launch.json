@@ -4,12 +4,27 @@
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
+        
         {
             "name": "Python: Current File (Integrated Terminal)",
             "type": "python",
             "request": "launch",
             "program": "${file}",
             "console": "integratedTerminal"
+        },
+        {
+            "name": "Debug",
+            "type": "node",
+            "request": "launch",
+            "runtimeExecutable": "npm",
+            "cwd": "${workspaceRoot}",
+            "env":{
+               "NODE_PATH": "${workspaceRoot}/node_modules"
+            },
+            "runtimeArgs": [
+                "run-script", "debug"
+            ],
+            "port": 1337
         },
         {
             "name": "Python: Remote Attach",

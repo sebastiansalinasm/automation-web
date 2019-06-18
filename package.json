@@ -1,16 +1,20 @@
 {
   "name": "automation-web",
   "version": "1.0.0",
-  "description": "",
+  "description": "automation test cases",
   "main": "index.js",
   "scripts": {
     "cypress:video": "cypress run --record --key 1acd4f46-a810-422f-9182-e3b9e5e208ab",
     "cypress:open": "cypress open"
   },
-  "author": "",
+  "author": "Sebastian Salinas",
   "license": "ISC",
   "devDependencies": {
+    "cucumber": "^5.0.3",
     "cypress": "3.3.1",
     "cypress-cucumber-preprocessor": "^1.12.0"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true
   }
 }
