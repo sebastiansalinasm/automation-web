@@ -10,3 +10,7 @@ Feature: Revisión de Página Principal de Banco Consorcio
         Given I type "crédito"
         When I press button search
 
+    Scenario: Realizar nuevamente una Búsqueda
+        Given I type "Consumo"
+        When I press the button "buscar"
+        Then Show the new results
